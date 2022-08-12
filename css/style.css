@@ -18,7 +18,9 @@ main {
   background: #00b4db;
   font-size: 1rem;
   margin: 5px;
-  
+  animation-name: banner-animacion;
+  animation-duration: 2s;
+  animation-iteration-count: 5;
 }
 
 .banner2 {
@@ -32,7 +34,9 @@ main {
   background: #00b4db;
   font-size: 1rem;
   margin: 5px;
-  
+  animation-name: banner-animacion;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
 }
 
 .banner3 {
@@ -46,5 +50,35 @@ main {
   background: #00b4db;
   font-size: 1rem;
   margin: 5px;
-  
+  animation-name: animacion2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes banner-animacion {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+@keyframes animacion2 {
+  0% {
+    width: 100px;
+  }
+  25%{
+    width: 200px;
+  }
+  50%{
+    width: 150px;
+  }
+  75%{
+    width: 300px;
+  }
+
+  100% {
+    width: 100px;
+  }
 }
